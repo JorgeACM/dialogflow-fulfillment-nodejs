@@ -1,3 +1,11 @@
+# Unoficial library
+
+Changes made in 
++ Suggestion Chips (Quick Replies)
+    + You can modify the title message.
++ Cards
+    + You can add up to three buttons
+
 # Dialogflow Fulfillment Library
 The [Dialogflow Fulfillment Library](https://dialogflow.com/docs/fulfillment) allows you to connect natural language understanding and processing to your own systems, APIs, and databases. Using Fulfillment, you can surface commands and information from your services to your users through a natural conversational interface.
 
