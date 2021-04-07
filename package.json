@@ -1,6 +1,6 @@
 {
   "name": "dialogflow-fulfillment-nodejs",
-  "version": "1.0.0",
+  "version": "0.6.2",
   "description": "Dialogflow Fulfillment Library for Node.js",
   "main": "generateDocs.js",
   "peerDependencies": {
