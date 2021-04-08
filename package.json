@@ -1,11 +1,13 @@
 {
-  "name": "@jorgeacm/dialogflow-fulfillment-nodejs",
+  "name": "@jorgeacm/dialogflow-fulfillment-2",
   "version": "0.6.3",
   "description": "Dialogflow Fulfillment Library for Node.js",
   "main": "generateDocs.js",
   "peerDependencies": {
     "actions-on-google": "^2.4.1"
-  },
+  },"publishConfig": {
+  "registry":"https://www.npmjs.com/package/@jorgeacm/dialogflow-fulfillment-nodejs"
+},
   "keywords": [
     "dialogflow",
     "api.ai",
@@ -34,14 +36,7 @@
   "bugs": {
     "url": "https://github.com/JorgeACM/dialogflow-fulfillment-nodejs/issues"
   },  "scripts": {
-    "docs": "node ./generateDocs.js",
-    "lint": "eslint --fix \"src/**/*.js\" \"test/*.js\" \"script/*.js\"",
-    "test": "npm run lint && ava",
-    "zip": "npm run zip:actions-on-google && npm run zip:multilocale && npm run zip:temperature-converter && npm run zip:quick-start",
-    "zip:actions-on-google": "node ./script/generateZip.js --indexjs ./samples/actions-on-google/functions/index.js --packagejson ./samples/actions-on-google/functions/package.json --agentzip ./samples/actions-on-google/actions-on-google-agent.zip",
-    "zip:multilocale": "node ./script/generateZip.js --indexjs ./samples/multi-lang-and-locale/functions/index.js --packagejson ./samples/multi-lang-and-locale/functions/package.json --agentzip ./samples/multi-lang-and-locale/multilocale-agent.zip",
-    "zip:quick-start": "node ./script/generateZip.js --indexjs ./samples/quick-start/functions/index.js --packagejson ./samples/quick-start/functions/package.json --agentzip ./samples/quick-start/quickstart-agent.zip",
-    "zip:temperature-converter": "node ./script/generateZip.js --indexjs ./samples/parameters-contexts-and-rich-responses/functions/index.js --packagejson ./samples/parameters-contexts-and-rich-responses/functions/package.json --agentzip ./samples/parameters-contexts-and-rich-responses/temperature-converter-agent.zip"
+
   },
   "homepage": "https://github.com/JorgeACM/dialogflow-fulfillment-nodejs#readme"
 }
